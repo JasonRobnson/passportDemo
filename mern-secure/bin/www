@@ -1,23 +1,4 @@
-#!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
-
-/**
- * Create HTTP server.
- */
-
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-
-/**
- * Normalize a port into a number, string, or false.
- */
 
 const normalizePort = val => {
   let port = parseInt(val, 10);

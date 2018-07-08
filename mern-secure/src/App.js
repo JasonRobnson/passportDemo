@@ -20,7 +20,7 @@ class App extends Component {
         console.log(this.state.books);
       })
       .catch((error) => {
-        if (error.response.status === 401) {
+        if(error.response.status === 401) {
           this.props.history.push("/login");
         }
       });

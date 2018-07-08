@@ -41,7 +41,7 @@ export default function register() {
         navigator.serviceWorker.ready.then(() => {
           console.log(
             'This web app is being served cache-first by a service ' +
-            'worker. To learn more, visit https://goo.gl/SC7cgQ'
+              'worker. To learn more, visit https://goo.gl/SC7cgQ'
           );
         });
       } else {
@@ -51,7 +51,7 @@ export default function register() {
     });
 
     window.addEventListener('fetch', (event) => {
-      if (event.request.url.match('^.*(\/api\/).*$')) {
+      if ( event.request.url.match( '^.*(\/api\/).*$' ) ) {
         return false;
       }
     });

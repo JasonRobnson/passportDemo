@@ -1,14 +1,14 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
 
-var book = require('./routes/book');
-var auth = require('./routes/auth');
-var app = express();
+const book = require('./routes/book');
+const auth = require('./routes/auth');
+const app = express();
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
